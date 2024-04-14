@@ -1,0 +1,8 @@
+.greetin{
+    width: 100vw;
+    height: 26em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
