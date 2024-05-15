@@ -1,0 +1,15 @@
+.carrito{
+    margin-left: 35vw;
+}
+
+.carrito a{
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+@media(max-width:768px){
+    .logo{
+        margin-left: 0;
+    }
+
+}

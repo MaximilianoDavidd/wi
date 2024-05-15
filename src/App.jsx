@@ -1,17 +1,26 @@
-import { useState } from 'react'
-import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavbarComponent from "./components/Navbar/Navbar";
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { CartProvider } from "./context/CartContext";
 
 
 function App() {
   return (
-   <div className='App'>
-  <Navbar />
-  <ItemListContainer greeting={'Bienvenidos a Winka'}/>
-  <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada', quantity)}/>
-  </div>
-);
+    <div className='App'>
+      <BrowserRouter>
+        <CartProvider>
+          <NavbarComponent />
+          <Routes>
+            <Route path='/' element={<ItemListContainer greeting={'Welcome to Winka'} />} />
+            <Route path='/category/:categoryId' element={<ItemListContainer />} />
+            <Route path='/item/:itemId' element={<ItemDetailContainer />} />
+            <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+          </Routes>
+        </CartProvider>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App

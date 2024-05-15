@@ -1,0 +1,30 @@
+.card-container{
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container .custom-card{
+    border: none;
+}
+
+.itemHeader{
+    margin-bottom: 1em;
+}
+
+.option{
+    background-color: #FFF8F5;
+    color: black;
+    border: 1px rgba(0, 0, 0, 0.096) solid;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+
+}
+
+.info{
+    margin-top: 1em;
+}

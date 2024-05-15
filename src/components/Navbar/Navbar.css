@@ -1,16 +1,14 @@
-
-.navbar{
+.navbar {
     background-color: #FFF8F5;
     z-index: 1000;
     top: 0;
-    height: 20vh;
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
@@ -19,25 +17,36 @@
     margin-top: 8vh;
 }
 
-li a{
+li a {
     text-decoration: none;
     margin: 2em;
     color: #373B3A;
 }
 
-.logo{
-    height: 6em;
+.custom-nav-dropdown .dropdown-menu {
+    background-color: #FFF8F5; /* Fondo blanco */
+    color: black; /* Texto oscuro */
+  }
+.logo {
+    height: 8vw;
     margin: 1em;
 }
 
-.carrito-img{
+.carrito-img {
     margin-top: 1.7em;
     margin-right: 2em;
     height: 0.5em;
 }
 
-.cart-quantity{
+.cart-quantity {
     margin-left: 0.7em;
     color: #373b3ac5;
     font-weight: bolder;
 }
+
+    .navbar-expand-lg .navbar-collapse {
+        max-width: 50vw;
+        padding-left: 2vw;
+    }
+
+
