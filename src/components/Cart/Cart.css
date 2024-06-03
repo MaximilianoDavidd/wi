@@ -1,0 +1,20 @@
+.boton-check{
+    background-color: #FFF8F5;
+    color: black;
+    border: 1px rgba(0, 0, 0, 0.096) solid;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+
+}
+
+.link-button{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.808);
+    font-weight: 600;
+}
+
+.pointer{
+    cursor: pointer;
+}
